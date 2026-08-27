@@ -233,7 +233,7 @@ function Index() {
 
       {/* About */}
       <section className="bg-surface pb-16 pt-14">
-        <div className="mx-auto grid max-w-[1180px] grid-cols-1 gap-10 px-6 lg:grid-cols-[1fr_1.2fr]">
+        <div className="mx-auto grid max-w-[1240px] grid-cols-1 items-start gap-8 px-6 lg:grid-cols-[0.95fr_1.05fr_1fr_0.8fr]">
           <div>
             <h2 className="text-3xl font-extrabold tracking-tight text-navy">About Abbasi Farm</h2>
             <Squiggle />
@@ -250,33 +250,30 @@ function Index() {
             </a>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-[1fr_1fr]">
-            <img
-              src={pool2}
-              alt="Abbasi Farm pool surrounded by palm trees"
-              loading="lazy"
-              width={1024}
-              height={768}
-              className="h-[180px] w-full rounded-md object-cover shadow-lg md:h-full"
-            />
-            <div>
-              <h3 className="text-2xl font-extrabold tracking-tight text-navy">Pool Details</h3>
-              <Squiggle />
-              <dl className="mt-5 space-y-3">
-                {details.map(({ icon: Icon, label, value }) => (
-                  <div key={label} className="grid grid-cols-[24px_110px_1fr] items-center text-sm">
-                    <Icon className="size-4 text-navy" />
-                    <dt className="text-muted-foreground">{label}</dt>
-                    <dd className="font-medium text-navy">{value}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          </div>
-        </div>
+          <img
+            src={pool2}
+            alt="Abbasi Farm pool surrounded by palm trees"
+            loading="lazy"
+            width={1024}
+            height={768}
+            className="h-[200px] w-full rounded-md object-cover shadow-lg"
+          />
 
-        <div className="mx-auto mt-10 max-w-[1180px] px-6">
-          <div className="ml-auto max-w-xs rounded-md bg-navy p-6 text-center">
+          <div>
+            <h3 className="text-2xl font-extrabold tracking-tight text-navy">Pool Details</h3>
+            <Squiggle />
+            <dl className="mt-5 space-y-3">
+              {details.map(({ icon: Icon, label, value }) => (
+                <div key={label} className="grid grid-cols-[24px_110px_1fr] items-center text-sm">
+                  <Icon className="size-4 text-navy" />
+                  <dt className="text-muted-foreground">{label}</dt>
+                  <dd className="font-medium text-navy">{value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <div className="rounded-md bg-navy p-6 text-center">
             <LifeBuoy className="mx-auto size-8 text-brand" />
             <h4 className="mt-3 text-base font-bold text-background">Important Note</h4>
             <p className="mt-2 text-xs leading-5 text-background/80">
@@ -285,6 +282,7 @@ function Index() {
           </div>
         </div>
       </section>
+
 
       {/* Gallery */}
       <section className="bg-background py-14">
