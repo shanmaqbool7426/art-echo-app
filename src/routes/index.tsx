@@ -216,7 +216,8 @@ function Index() {
         </div>
 
         {/* Feature bar */}
-        <div className="mx-auto -mb-10 max-w-[1180px] translate-y-[-44px] px-6">
+        <div className="relative z-10 mx-auto -mt-11 max-w-[1180px] px-6 pb-0">
+
           <div className="grid grid-cols-2 divide-border rounded-md bg-background px-6 py-5 shadow-xl md:grid-cols-5 md:divide-x">
             {features.map(({ icon: Icon, title, sub }) => (
               <div key={title} className="flex items-center gap-3 px-4 py-2">
