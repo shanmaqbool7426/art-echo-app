@@ -71,13 +71,20 @@
 
 :root {
   --radius: 0.625rem;
+  --navy: oklch(0.31 0.11 259);
+  --navy-deep: oklch(0.26 0.1 259);
+  --brand: oklch(0.72 0.13 236);
+  --brand-soft: oklch(0.94 0.03 236);
+  --whatsapp: oklch(0.68 0.17 150);
+  --surface: oklch(0.975 0.008 250);
   --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.31 0.11 259);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.31 0.11 259);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
+  --primary: oklch(0.31 0.11 259);
+
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
