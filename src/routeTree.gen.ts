@@ -10,11 +10,34 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as BookingRouteImport } from './routes/booking'
 import { Route as BookingsRouteImport } from './routes/bookings'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as RulesRouteImport } from './routes/rules'
+import { Route as AdminIndexRouteImport } from './routes/admin/index'
+import { Route as AdminBookingsRouteImport } from './routes/admin/bookings'
+import { Route as AdminCalendarRouteImport } from './routes/admin/calendar'
+import { Route as AdminCustomersRouteImport } from './routes/admin/customers'
+import { Route as AdminReportsRouteImport } from './routes/admin/reports'
+import { Route as AdminSettingsRouteImport } from './routes/admin/settings'
+import { Route as AdminSlotsRouteImport } from './routes/admin/slots'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookingRoute = BookingRouteImport.update({
+  id: '/booking',
+  path: '/booking',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BookingsRoute = BookingsRouteImport.update({
@@ -22,31 +45,175 @@ const BookingsRoute = BookingsRouteImport.update({
   path: '/bookings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RulesRoute = RulesRouteImport.update({
+  id: '/rules',
+  path: '/rules',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminBookingsRoute = AdminBookingsRouteImport.update({
+  id: '/bookings',
+  path: '/bookings',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminCalendarRoute = AdminCalendarRouteImport.update({
+  id: '/calendar',
+  path: '/calendar',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminCustomersRoute = AdminCustomersRouteImport.update({
+  id: '/customers',
+  path: '/customers',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminReportsRoute = AdminReportsRouteImport.update({
+  id: '/reports',
+  path: '/reports',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminSettingsRoute = AdminSettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminSlotsRoute = AdminSlotsRouteImport.update({
+  id: '/slots',
+  path: '/slots',
+  getParentRoute: () => AdminRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRouteWithChildren
+  '/booking': typeof BookingRoute
   '/bookings': typeof BookingsRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/gallery': typeof GalleryRoute
+  '/rules': typeof RulesRoute
+  '/admin/bookings': typeof AdminBookingsRoute
+  '/admin/calendar': typeof AdminCalendarRoute
+  '/admin/customers': typeof AdminCustomersRoute
+  '/admin/reports': typeof AdminReportsRoute
+  '/admin/settings': typeof AdminSettingsRoute
+  '/admin/slots': typeof AdminSlotsRoute
+  '/admin/': typeof AdminIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/booking': typeof BookingRoute
   '/bookings': typeof BookingsRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/gallery': typeof GalleryRoute
+  '/rules': typeof RulesRoute
+  '/admin/bookings': typeof AdminBookingsRoute
+  '/admin/calendar': typeof AdminCalendarRoute
+  '/admin/customers': typeof AdminCustomersRoute
+  '/admin/reports': typeof AdminReportsRoute
+  '/admin/settings': typeof AdminSettingsRoute
+  '/admin/slots': typeof AdminSlotsRoute
+  '/admin': typeof AdminIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRouteWithChildren
+  '/booking': typeof BookingRoute
   '/bookings': typeof BookingsRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/gallery': typeof GalleryRoute
+  '/rules': typeof RulesRoute
+  '/admin/bookings': typeof AdminBookingsRoute
+  '/admin/calendar': typeof AdminCalendarRoute
+  '/admin/customers': typeof AdminCustomersRoute
+  '/admin/reports': typeof AdminReportsRoute
+  '/admin/settings': typeof AdminSettingsRoute
+  '/admin/slots': typeof AdminSlotsRoute
+  '/admin/': typeof AdminIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/bookings'
+  fullPaths:
+    | '/'
+    | '/admin'
+    | '/booking'
+    | '/bookings'
+    | '/contact'
+    | '/faq'
+    | '/gallery'
+    | '/rules'
+    | '/admin/bookings'
+    | '/admin/calendar'
+    | '/admin/customers'
+    | '/admin/reports'
+    | '/admin/settings'
+    | '/admin/slots'
+    | '/admin/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/bookings'
-  id: '__root__' | '/' | '/bookings'
+  to:
+    | '/'
+    | '/booking'
+    | '/bookings'
+    | '/contact'
+    | '/faq'
+    | '/gallery'
+    | '/rules'
+    | '/admin/bookings'
+    | '/admin/calendar'
+    | '/admin/customers'
+    | '/admin/reports'
+    | '/admin/settings'
+    | '/admin/slots'
+    | '/admin'
+  id:
+    | '__root__'
+    | '/'
+    | '/admin'
+    | '/booking'
+    | '/bookings'
+    | '/contact'
+    | '/faq'
+    | '/gallery'
+    | '/rules'
+    | '/admin/bookings'
+    | '/admin/calendar'
+    | '/admin/customers'
+    | '/admin/reports'
+    | '/admin/settings'
+    | '/admin/slots'
+    | '/admin/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRouteWithChildren
+  BookingRoute: typeof BookingRoute
   BookingsRoute: typeof BookingsRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  GalleryRoute: typeof GalleryRoute
+  RulesRoute: typeof RulesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +225,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/booking': {
+      id: '/booking'
+      path: '/booking'
+      fullPath: '/booking'
+      preLoaderRoute: typeof BookingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/bookings': {
       id: '/bookings'
       path: '/bookings'
@@ -65,12 +246,117 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BookingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rules': {
+      id: '/rules'
+      path: '/rules'
+      fullPath: '/rules'
+      preLoaderRoute: typeof RulesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/': {
+      id: '/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/bookings': {
+      id: '/admin/bookings'
+      path: '/bookings'
+      fullPath: '/admin/bookings'
+      preLoaderRoute: typeof AdminBookingsRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/calendar': {
+      id: '/admin/calendar'
+      path: '/calendar'
+      fullPath: '/admin/calendar'
+      preLoaderRoute: typeof AdminCalendarRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/customers': {
+      id: '/admin/customers'
+      path: '/customers'
+      fullPath: '/admin/customers'
+      preLoaderRoute: typeof AdminCustomersRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/reports': {
+      id: '/admin/reports'
+      path: '/reports'
+      fullPath: '/admin/reports'
+      preLoaderRoute: typeof AdminReportsRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/settings': {
+      id: '/admin/settings'
+      path: '/settings'
+      fullPath: '/admin/settings'
+      preLoaderRoute: typeof AdminSettingsRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/slots': {
+      id: '/admin/slots'
+      path: '/slots'
+      fullPath: '/admin/slots'
+      preLoaderRoute: typeof AdminSlotsRouteImport
+      parentRoute: typeof AdminRoute
+    }
   }
 }
 
+interface AdminRouteChildren {
+  AdminBookingsRoute: typeof AdminBookingsRoute
+  AdminCalendarRoute: typeof AdminCalendarRoute
+  AdminCustomersRoute: typeof AdminCustomersRoute
+  AdminReportsRoute: typeof AdminReportsRoute
+  AdminSettingsRoute: typeof AdminSettingsRoute
+  AdminSlotsRoute: typeof AdminSlotsRoute
+  AdminIndexRoute: typeof AdminIndexRoute
+}
+
+const AdminRouteChildren: AdminRouteChildren = {
+  AdminBookingsRoute: AdminBookingsRoute,
+  AdminCalendarRoute: AdminCalendarRoute,
+  AdminCustomersRoute: AdminCustomersRoute,
+  AdminReportsRoute: AdminReportsRoute,
+  AdminSettingsRoute: AdminSettingsRoute,
+  AdminSlotsRoute: AdminSlotsRoute,
+  AdminIndexRoute: AdminIndexRoute,
+}
+
+const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRouteWithChildren,
+  BookingRoute: BookingRoute,
   BookingsRoute: BookingsRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  GalleryRoute: GalleryRoute,
+  RulesRoute: RulesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
