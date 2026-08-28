@@ -1,0 +1,810 @@
+Create a **premium, modern, elegant and highly professional UI/UX design** for a swimming pool website called **“Abbasi Farm Swimming Pool”**, located in Muzaffargarh, Pakistan.
+
+This is a **UI design project only**. Do not build backend, APIs, database, authentication logic or actual payment processing. Focus entirely on creating a polished, production-quality frontend experience and realistic interactive UI states.
+
+## Brand & Visual Direction
+
+The website should feel like a **premium private swimming club / resort**, while still being appropriate for a local Pakistani business.
+
+Design style:
+
+* Premium
+* Clean
+* Modern
+* Elegant
+* Trustworthy
+* Family-friendly
+* Spacious
+* Professional
+
+Color direction:
+
+* Deep navy blue
+* Aqua / swimming-pool blue
+* White
+* Very light gray
+* Subtle teal accents
+
+Use high-quality outdoor swimming pool imagery, elegant typography, generous whitespace, soft shadows, rounded cards and subtle animations.
+
+Avoid:
+
+* Cheap-looking template designs
+* Excessive gradients
+* Neon colors
+* Overly colorful UI
+* Cluttered layouts
+* Generic Bootstrap-style appearance
+
+---
+
+# PUBLIC WEBSITE UI
+
+## 1. Header
+
+Create a premium sticky navbar.
+
+Logo:
+**Abbasi Farm Swimming Pool**
+
+Navigation:
+
+* Home
+* About
+* Facilities
+* Pool
+* Timings & Pricing
+* Rules
+* Gallery
+* FAQs
+* Contact
+
+Primary CTA:
+
+**Book Your Slot**
+
+Secondary action:
+
+**WhatsApp**
+
+On mobile, use a clean hamburger menu.
+
+---
+
+# 2. Hero Section
+
+Create a visually impressive full-screen hero section using a beautiful outdoor swimming pool image.
+
+Headline:
+
+**Swim. Relax. Enjoy.**
+
+Subheading:
+
+**A clean, safe and refreshing swimming experience in Muzaffargarh.**
+
+Buttons:
+
+**Book Your Slot**
+
+**Explore Our Pool**
+
+Add a small information badge:
+
+**Outdoor Pool • April – September**
+
+Show a floating information card:
+
+### Pool Information
+
+**22 × 45 ft**
+
+**5 – 7 ft Depth**
+
+**25 – 30 People Capacity**
+
+**Outdoor Pool**
+
+The hero should immediately communicate premium quality and encourage users to book.
+
+---
+
+# 3. Quick Booking Card
+
+Place a floating booking widget over/below the hero.
+
+Title:
+
+**Book Your Swimming Slot**
+
+Step indicators:
+
+**01 Date → 02 Time → 03 Visitors**
+
+Date selector:
+
+**Select Date**
+
+Use a modern calendar-style interface.
+
+Time-slot cards:
+
+**05:00 PM – 06:00 PM**
+18 Spots Available
+
+**06:00 PM – 07:00 PM**
+8 Spots Available
+
+**07:00 PM – 08:00 PM**
+Fully Booked
+
+Use visual states:
+
+* Available
+* Few spots left
+* Fully booked
+* Selected
+
+Button:
+
+**Continue**
+
+Make this section extremely clean and easy to understand.
+
+---
+
+# 4. About Section
+
+Create a premium split layout.
+
+Left:
+Large swimming pool image.
+
+Right:
+
+### Welcome to Abbasi Farm Swimming Pool
+
+Add a professional short description about a clean, relaxing and safe swimming experience.
+
+Include small statistics:
+
+**22 × 45 ft**
+Pool Size
+
+**5–7 ft**
+Depth
+
+**25–30**
+Capacity
+
+**April–September**
+Swimming Season
+
+CTA:
+
+**Learn More**
+
+---
+
+# 5. Facilities
+
+Create an elegant card grid.
+
+Facilities:
+
+* Changing Rooms
+* Showers
+* Parking
+* Washrooms
+* First Aid
+* Kids Area
+* Seating Area
+* Swimming Equipment
+
+Each card should contain:
+
+Icon
+Facility name
+Short description
+
+Do not display lockers or café because they are not available.
+
+---
+
+# 6. Pool Details
+
+Create a sophisticated specification section.
+
+Use large visual cards:
+
+**Pool Type**
+Outdoor
+
+**Pool Size**
+22 × 45 ft
+
+**Depth**
+5 – 7 ft
+
+**Capacity**
+25 – 30 People
+
+**Temperature**
+Natural Climate
+
+**Season**
+April – September
+
+Add a premium visual pool diagram/illustration if appropriate.
+
+---
+
+# 7. Safety Section
+
+Create a strong safety-focused section.
+
+Headline:
+
+### Your Safety Comes First
+
+Highlight:
+
+**Children & Non-Swimmers**
+
+> Children and non-swimmers must wear safety jackets / life jackets while using the pool.
+
+Show safety features:
+
+* First Aid Available
+* Lifeguard Upon Request
+* Safety Equipment
+* Controlled Pool Capacity
+
+Use professional safety icons.
+
+---
+
+# 8. Timings & Pricing
+
+Create a modern section with tabs:
+
+**Pool Timings | Entry Fees | Packages**
+
+For timings, use a clean weekly schedule.
+
+For pricing, create attractive pricing cards.
+
+Use placeholder pricing such as:
+
+**PKR XXX**
+
+until actual prices are provided.
+
+Do not invent final prices.
+
+Highlight the recommended/popular package visually.
+
+CTA:
+
+**Book Now**
+
+---
+
+# 9. Booking Experience UI
+
+Create a dedicated premium booking page.
+
+### Step 1 — Select Date
+
+Modern calendar.
+
+Show available / unavailable dates.
+
+### Step 2 — Select Time
+
+Large time-slot cards.
+
+Each card shows:
+
+Time
+Available spots
+Status
+
+Example:
+
+**05:00 PM – 06:00 PM**
+
+18 spots available
+
+[Select]
+
+### Step 3 — Visitors
+
+Create counters:
+
+Adults
+[-] 2 [+]
+
+Children
+[-] 1 [+]
+
+Show:
+
+**Total Visitors: 3**
+
+Show remaining capacity.
+
+### Step 4 — Customer Details
+
+Fields:
+
+* Full Name
+* Phone Number
+* WhatsApp Number
+* Email
+* Emergency Contact
+* Additional Notes
+
+Checkbox:
+
+**I agree to the swimming pool rules and safety guidelines.**
+
+### Step 5 — Booking Summary
+
+Show:
+
+Pool
+Date
+Time
+Visitors
+Price
+Total Amount
+
+Buttons:
+
+**Back**
+
+**Confirm Booking**
+
+---
+
+# 10. Booking Confirmation UI
+
+Create a beautiful success screen.
+
+Large success icon.
+
+### Booking Confirmed!
+
+**Your swimming slot has been successfully reserved.**
+
+Show:
+
+**Booking ID: #ABF-00124**
+
+Date
+Time
+Visitors
+Total Amount
+
+Status badge:
+
+**Confirmed**
+
+Buttons:
+
+**View Booking**
+
+**WhatsApp Details**
+
+**Download Receipt**
+
+---
+
+# 11. Gallery
+
+Create a premium masonry gallery.
+
+Categories:
+
+* Pool
+* Facilities
+* Environment
+* Swimming
+
+Use image hover effects.
+
+Clicking an image opens a beautiful lightbox.
+
+---
+
+# 12. Rules & Regulations
+
+Create a clean professional rules page.
+
+Cards for:
+
+* Safety jacket requirement
+* Swimming attire
+* Children supervision
+* Lifeguard instructions
+* Pool capacity
+* Diving rules
+* Running restrictions
+* Emergency procedures
+
+Use clear icons and warning/safety styling.
+
+---
+
+# 13. FAQ
+
+Create elegant accordion components.
+
+Questions:
+
+* What are the swimming pool timings?
+* What is the pool depth?
+* Is the pool suitable for children?
+* Do children need life jackets?
+* Is parking available?
+* Can I book a slot online?
+* Can I cancel my booking?
+* Is swimming equipment available?
+* Is a lifeguard available?
+
+---
+
+# 14. Contact
+
+Create a premium contact section.
+
+Display:
+
+**Abbasi Farm Swimming Pool**
+
+Mehmood Kot Road
+Near Jamaal Chowk
+Muzaffargarh, Pakistan
+
+Phone:
+
++92 312 9668880
+0334 6014382
+
+Buttons:
+
+**Call Now**
+
+**WhatsApp**
+
+**Get Directions**
+
+Include a large map UI area.
+
+---
+
+# ADMIN PANEL UI
+
+Also design a separate **premium admin dashboard UI** for managing the swimming pool website.
+
+This is UI only.
+
+## Admin Sidebar
+
+* Dashboard
+* Bookings
+* Calendar
+* Time Slots
+* Customers
+* Pricing
+* Timings
+* Facilities
+* Gallery
+* Rules & Safety
+* FAQs
+* Notifications
+* Reports
+* Settings
+
+---
+
+# Admin Dashboard
+
+Create dashboard cards:
+
+**Today's Bookings**
+24
+
+**Today's Visitors**
+67
+
+**Available Slots**
+12
+
+**Pending Bookings**
+8
+
+**Monthly Bookings**
+642
+
+**Monthly Revenue**
+PKR XXX,XXX
+
+Add clean charts for:
+
+* Bookings
+* Visitors
+* Revenue
+* Popular time slots
+
+---
+
+# Admin Booking Management
+
+This is the most important admin screen.
+
+Create a professional booking management table.
+
+Columns:
+
+**Booking ID | Customer | Date | Time | Visitors | Amount | Payment | Status | Actions**
+
+Add filters:
+
+* Search
+* Date
+* Time
+* Booking Status
+* Payment Status
+
+Statuses:
+
+🟢 Confirmed
+🟡 Pending
+🔴 Cancelled
+🔵 Completed
+
+Actions:
+
+* View
+* Edit
+* Reschedule
+* Cancel
+
+---
+
+# Booking Details Drawer
+
+Clicking a booking opens a beautiful side drawer.
+
+Show:
+
+### Customer Details
+
+Name
+Phone
+WhatsApp
+Email
+
+### Booking Details
+
+Booking ID
+Date
+Time
+Adults
+Children
+Total Visitors
+
+### Payment
+
+Amount
+Payment Method
+Payment Status
+
+### Timeline
+
+Booked
+Confirmed
+Completed
+
+Buttons:
+
+**Confirm**
+
+**Reschedule**
+
+**Cancel**
+
+**Mark Completed**
+
+---
+
+# Calendar UI
+
+Create a professional booking calendar.
+
+Views:
+
+**Day | Week | Month**
+
+Show bookings directly on the calendar.
+
+Each booking should visually show:
+
+Customer name
+Time
+Number of visitors
+Status
+
+---
+
+# Time Slot Management UI
+
+Create a dedicated time-slot management page.
+
+Example card:
+
+### 05:00 PM – 06:00 PM
+
+Capacity: **30**
+
+Booked: **22**
+
+Available: **8**
+
+Status:
+
+**Open**
+
+Actions:
+
+Edit
+Disable
+Block
+
+Add button:
+
+**+ Create Time Slot**
+
+---
+
+# Capacity Visualization
+
+Make capacity very easy for the admin to understand.
+
+Example:
+
+### Current Slot Capacity
+
+**22 / 30**
+
+████████████░░░░
+
+**8 Spots Available**
+
+When full:
+
+**30 / 30**
+
+**FULLY BOOKED**
+
+---
+
+# Customer Management
+
+Create customer table:
+
+Name
+Phone
+Email
+Total Bookings
+Last Visit
+Total Spent
+Status
+
+Customer profile page should show booking history and customer details.
+
+---
+
+# Reports UI
+
+Create a professional analytics dashboard.
+
+Filters:
+
+Today
+This Week
+This Month
+Custom Range
+
+Show:
+
+* Total Bookings
+* Total Visitors
+* Revenue
+* Cancelled Bookings
+* Popular Time Slots
+* Peak Days
+
+Include:
+
+**Export Report**
+
+button.
+
+---
+
+# Content Management UI
+
+Admin should have clean forms to manage:
+
+* Pool information
+* Facilities
+* Pricing
+* Timings
+* Gallery
+* Rules
+* FAQs
+
+Create polished edit forms with:
+
+Save Changes
+Cancel
+Preview
+
+buttons.
+
+---
+
+# RESPONSIVE UI
+
+The entire public website must look excellent on:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Mobile booking must be especially easy.
+
+Use:
+
+* Large touch-friendly buttons
+* Simple date selector
+* Easy time-slot selection
+* Sticky **Book Now** CTA
+* Bottom mobile booking button
+
+Admin panel should also be tablet/mobile responsive.
+
+---
+
+# UI QUALITY REQUIREMENT
+
+The final result should look like a **real premium commercial website**, not an AI-generated template.
+
+Focus on:
+
+* Strong visual hierarchy
+* Excellent spacing
+* Consistent typography
+* Premium imagery
+* Elegant cards
+* Smooth transitions
+* Clear CTAs
+* Accessible forms
+* Professional empty states
+* Loading states
+* Error states
+* Success states
+* Confirmation modals
+* Toast notifications
+
+Most importantly, make the **booking journey extremely simple**:
+
+**Date → Time → Visitors → Customer Details → Summary → Confirmation**
+
+The user should always know:
+
+**What they selected → How many spots are available → What they will pay → What happens next.**

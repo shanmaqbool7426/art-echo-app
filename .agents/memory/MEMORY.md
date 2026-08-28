@@ -1,0 +1,1 @@
+- [Package installation preservation](package-installation-preservation.md) — inspect manifests after automated installs because semver ranges may be rewritten.
